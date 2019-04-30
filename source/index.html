@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Эльбрусская прохлада</title>
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div style="display:none">
+    <include src="source/img/img.svg"></include>
+  </div>
+  <header class="page-header">
+    <div class="page-header__navigation container">
+      <div class="menu">
+        <a class="menu__logo" href="index.html">Эльбрусская<br> Прохлада</a>
+        <button id="menu__open" class="menu__open menu__open--htx" type="button"><span>Меню</span></button>
+      </div>
+      <nav id="nav" class="nav menu__hide">
+        <ul class="nav__lists">
+          <li class="nav__list nav__list--active">
+            <a href="#">Главная</a>
+          </li>
+          <li class="nav__list">
+            <a href="#">Каталог</a>
+          </li>
+          <li class="nav__list">
+            <a href="#">Как заказать</a>
+          </li>
+          <li class="nav__list">
+            <a href="#">Отзывы</a>
+          </li>
+          <li class="nav__list">
+            <a href="#">О нас</a>
+          </li>
+          <li class="nav__list">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="nav__items">
+          <li class="nav__item">
+            <a href="tel:+79280761498">+7 928 076 14 98</a>
+          </li>
+          <li class="nav__item">
+            <button type="button" name="button">Заказать обратный звонок</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="bg">
+      <section class="info container">
+        <h1 class="info__title">Оптовые поставки минеральной воды и безалкогольных напитков</h1>
+        <div class="info__size">
+        <span class="info__number"><span id="cp">1</span>/4</span>
+        <section class="info__slider">
+          <div class="info__slide">
+            <img class="info__size1" src="img/tarragon.png" srcset="img/tarragon@2x.png 2x, img/tarragon@3x.png 3x" width="134" height="480" alt="тархун">
+          </div>
+          <div class="info__slide">
+            <img class="info__size1" src="img/cherry.png" srcset="img/cherry@2x.png 2x, img/cherry@3x.png 3x" width="134" height="480" alt="Вишня">
+          </div>
+          <div class="info__slide">
+            <img class="info__size2" src="img/water.png" srcset="img/water@2x.png 2x, img/water@3x.png 3x" width="134" height="480" alt="Вода">
+          </div>
+          <div class="info__slide">
+            <img class="info__size1" src="img/kvass.png" srcset="img/kvass@2x.png 2x, img/kvass@3x.png 3x" width="134" height="480" alt="Квас">
+          </div>
+        </section>
+        <section class="info__navs">
+          <div class="info__nav">
+            <span>1</span>
+          </div>
+          <div class="info__nav">
+            <span>2</span>
+          </div>
+          <div class="info__nav">
+            <span>3</span>
+          </div>
+          <div class="info__nav">
+            <span>4</span>
+          </div>
+        </section>
+        </div>
+      </section>
+    </div>
+    <div class="bg">
+      <section class="about-us container">
+        <section class="about-us__block">
+        <section class="about-us__header">
+          <h2 class="about-us__title">Немного о нас</h2>
+          <p class="about-us__text">ООО "Эльбрусская прохлада"- отптовые продажи безалкогольных напитков от производителя.Широкий ассортимент лимонадов,минеральной воды,разных сементов.Артезианская питьевая вода,добывается из скважины глубиной 230
+            м. Автоматизированная система розлива исключает любые загрязнения в процессе производства, а отсутствие поблизости крупных предприятий и сельхозугодий гарантирует чистоту добываемой воды. </p>
+        </section>
+        <div class="about-us__size">
+        <span class="about-us__number"><span id="cn">1</span>/4</span>
+        <section class="about-us__slider">
+          <div class="about-us__list">
+            <svg width="86" height="86">
+              <use xlink:href="#percent"></use>
+            </svg>
+            <p>Индивидуальные скидки в зависимости от объема покупки</p>
+          </div>
+          <div class="about-us__list">
+            <svg width="86" height="86">
+              <use xlink:href="#percent"></use>
+            </svg>
+            <p>Индивидуальные скидки в зависимости от объема покупки</p>
+          </div>
+          <div class="about-us__list">
+            <svg width="86" height="86">
+              <use xlink:href="#percent"></use>
+            </svg>
+            <p>Индивидуальные скидки в зависимости от объема покупки</p>
+          </div>
+          <div class="about-us__list">
+            <svg width="86" height="86">
+              <use xlink:href="#percent"></use>
+            </svg>
+            <p>Индивидуальные скидки в зависимости от объема покупки</p>
+          </div>
+        </section>
+        </div>
+        </section>
+        <section class="about-us__items">
+          <div class="about-us__record">
+            <h2>Получить оптовый прайс</h2>
+            <p>Оставьте заявку и получите прайс на почту</p>
+          </div>
+          <form class="about-us__form" action="index.html" method="post">
+            <label class="visually-hidden" for="name"></label>
+            <input class="about-us__input" id="name" type="text" name="name" placeholder="Имя">
+            <label class="visually-hidden" for="mail"></label>
+            <input class="about-us__input" id="mail" type="text" name="mail" placeholder="E-mail">
+            <input class="about-us__submit" type="submit" name="" value="Отправить">
+          </form>
+        </section>
+      </section>
+    </div>
+  </main>
+  <script src="js/jquery.min-3.3.1.js"></script>
+  <script type="text/javascript" src="js/jquery.min-migrate-1.4.1.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

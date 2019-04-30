@@ -1,0 +1,234 @@
+.about-us {
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 1px;
+  z-index: 14;
+}
+
+.about-us__header {
+  margin: 0 15px;
+}
+
+.about-us__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 41px;
+  color: #1946BA;
+  margin-top: 43px;
+}
+
+.about-us__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  color: #2A2A2A;
+}
+
+.about-us__slider {}
+
+.about-us__list {
+  width: 290px;
+  margin: 15px;
+  min-height: 265px;
+  background: #FFFFFF;
+  box-shadow: 0 5px 20px rgba(25, 70, 186, 0.2); // display: flex;
+  // flex-direction: column;
+  // justify-content: space-around;
+  // align-items: flex-start;
+}
+
+.about-us__list svg {
+  margin-left: 0;
+  margin-right: 55%;
+}
+
+.about-us__list p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #2A2A2A;
+  margin: 0 20px;
+}
+
+.about-us__number {
+  font-family: "Geometria";
+  font-size: 15px;
+  line-height: 19px;
+  text-align: center;
+  color: #8C8C8C;
+  margin-left: 15px;
+}
+
+.about-us__record {
+  width: 95%;
+  min-height: 243px;
+  background-color: #1946BA;
+  background-image: url("../img/post.svg");
+  background-repeat: no-repeat;
+  background-size: 187.36px,auto;
+  background-position: 134px -32px;
+  padding-top: 1px;
+  margin-bottom: 11px;
+  margin-top: 44px;
+}
+
+.about-us__record h2 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 41px;
+  color: #FFFFFF;
+  margin: 30px 128px 10px 15px;
+}
+
+.about-us__record p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-left: 15px;
+  margin-right: 54px;
+}
+
+.about-us__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us__input {
+  border: 1px solid #DEDEDE;
+  box-sizing: border-box;
+  width: 90%;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 30px;
+}
+
+.about-us__input::placeholder {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  color: #8C8C8C;
+}
+
+.about-us__submit {
+  width: 90%;
+  height: 40px;
+  background: #1946BA;
+  box-shadow: 0 15px 30px rgba(25, 70, 186, 0.2);
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 48px;
+  margin-bottom: 50px;
+}
+@media (min-width: @size-tablet) {
+  .about-us__items {
+    display: flex;
+    margin-top: 40px;
+  }
+
+  .about-us__form {
+    width: 50%;
+  }
+  .about-us__header {
+    margin-bottom: 40px;
+  }
+
+  .about-us__record {
+    width: 50%;
+    margin-top: 0;
+  }
+}
+@media (min-width: @size-desktop) {
+  .about-us__block {
+    display: flex;
+    margin-top: 159px;
+  }
+
+  .about-us__header {
+    width: 710px;
+    margin: 0;
+  }
+
+  .about-us__size {
+    width: 690px;
+    margin-top: 59px;
+  }
+  // .about-us__slider {
+  //   width: 100%;
+  // }
+  .about-us__slide:not(.slick-active) {
+    opacity: 0.5;
+  }
+
+  .about-us__title {
+    font-size: 72px;
+    line-height: 75px;
+    margin-left: 80px;
+    margin-right: 90px;
+  }
+
+  .about-us__text {
+    margin-left: 80px;
+    margin-right: 125px;
+  }
+
+  .about-us__input,
+  .about-us__submit {
+    width: 505px;
+  }
+
+  .about-us__submit {
+    margin-bottom: 0;
+  }
+
+  .about-us__record {
+    width: 690px;
+    min-height: 496px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 158px;
+    background-size: 350.16px,auto;
+    background-position: 369px -32px;
+  }
+
+  .about-us__record h2 {
+    font-size: 72px;
+    line-height: 75px;
+    margin-left: 80px;
+  }
+
+  .about-us__record p {
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 80px;
+  }
+
+  .about-us__form {
+    justify-content: center;
+  }
+
+  .about-us__slid:not(:first-child) {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,149 @@
+.menu {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.menu__open {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 35px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  transition: background 0.3s;
+}
+
+.menu__open {
+  width: 24px;
+}
+
+.menu__hide {
+  display: none;
+}
+
+.menu__open:focus {
+  outline: none;
+}
+
+.menu__open span {
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #000000;
+}
+
+.menu__open span::after,
+.menu__open span::before {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #000000;
+  content: "";
+}
+
+.menu__open span::before {
+  top: -7px;
+}
+
+.menu__open span::after {
+  bottom: -7px;
+}
+
+.menu__open--htx {
+  background-color: #ffffff;
+}
+
+.menu__open--htx span {
+  transition: background 0s 0.3s;
+}
+
+.menu__open--htx span::after,
+.menu__open--htx span::before {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.menu__open--htx span::before {
+  transition-property: top, transform;
+}
+
+.menu__open--htx span::after {
+  transition-property: bottom, transform;
+}
+/* состояние active при открытом меню  */
+.menu__open--htx.is-active {
+  background-color: #ffffff;
+}
+
+.menu__open--htx.is-active span {
+  background: none;
+}
+
+.menu__open--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.menu__open--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.menu__open--htx.is-active span::after,
+.menu__open--htx.is-active span::before {
+  transition-delay: 0s, 0.3s;
+}
+
+.menu__logo {
+  font-family: "Geometria";
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #2A2A2A;
+  text-decoration: none;
+}
+
+@media (min-width: @size-tablet) {
+  .menu__open {
+    display: none;
+  }
+
+  .menu__hide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .menu {
+    margin-top: 0;
+  }
+
+  .menu__logo {
+font-size: 18px;
+line-height: 23px;
+  }
+}
+@media (min-width: @size-desktop) {
+  .menu {
+    margin-left: 80px;
+  }
+}
